@@ -1,0 +1,56 @@
+.form-outer {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	width: min(20em, 80vw);
+	margin-bottom: 1em;
+}
+
+.form-inner {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
+	max-width: min(20em, 80vw);
+}
+
+.form-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.outer-outer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.button-add {
+	flex-grow: 1;
+}
+
+.button-remove {
+	flex-grow: 1;
+}
+
+#submit {
+	width: min(20em, 80vw);
+}
+
+#bio {
+	resize: none;
+}
+
+#name-and-bio {
+	margin-bottom: 1em;
+}
+
+.how-2 {
+	max-width: 30em;
+	margin: auto;
+}
+
+li {
+	margin: 0.5em 0;
+}

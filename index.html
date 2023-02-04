@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>static page generator</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="/style.css" />
+	<link rel="icon" href="favicon.png">
+</head>
+<body>
+	<h1 style="text-align: center;">static page generator</h1>
+	<div class="outer-outer" id="outer-outer">
+		<div class="form-inner" id="name-and-bio">
+			<input type="text" id="your-name" placeholder="your name">
+			<textarea type="text" id="bio" placeholder="bio" rows="5"></textarea>
+		</div>
+		<div id="kevin">
+			<div class="form-outer" id="outer0">
+				<div class="form-inner" id="form0">
+					<input type="text" id="name0" name="name0" placeholder="label" class="label">
+					<input type="text" id="link0" name="link0" placeholder="link" class="link">
+				</div>
+				<div class="form-buttons" id="buttons0">
+					<button type="button" class="button-add" id="add0" title="add another link" onclick="addForm()">+</button> 
+				</div>
+			</div>
+		</div>
+		<button type="button" id="submit" onclick="generateOutput()">generate!</button>
+	</div>
+	<br>
+	<hr>
+	<div class="how-2">
+		<h2 style="text-align: center;">how to use</h2>
+			<ol>
+				<li>
+					fill out the form with the info you want on your website
+				</li>
+				<li>
+					click "generate!", and a file named "index.html" will be downloaded containing the code. put it in a folder somewhere on your computer (like your Documents folder)  
+				</li>
+				<li>
+					download this file and put it in the same folder: <a href="template/style.css">style.css</a>
+				</li>
+				<li>
+					put whatever image you'd like to be your icon into the folder as a 512x512 png file named icon.png <small>(<a href="template/icon.png">like this one</a>)</small>
+				</li>
+				<li>
+					upload all of the files to neocities or wherever you like to put your static websites
+				</li>
+			</ol>
+			<div style="text-align: center;"><small>made by <a href="https://moth.monster">Chesapeake</a> | source code</small></div>
+	</div>
+<script src="main.js"></script>
+</body>
+</html>

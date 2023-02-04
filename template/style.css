@@ -1,0 +1,107 @@
+:root {
+  --fg: black;
+  --bg: white;
+  --mid: grey;
+  --background: lightgrey;
+
+}
+html, 
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+}
+
+.outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: min(30em, 80vw);
+
+  flex-direction: column;
+  background-color: var(--bg);
+  border: 1px solid var(--mid);
+  border-radius: 0.2rem;
+  padding: 2em;
+  box-shadow: inset -0.1rem -0.1rem var(--mid);
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.icon {
+  max-height: 15em;
+  object-fit: contain;
+  border: 1px solid var(--mid);
+  border-radius: 0.2rem;
+  box-shadow: 0.1em 0.1em var(--mid);
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.link {
+  background-color: var(--bg);
+  border: 1px solid var(--mid);
+  border-radius: 0.2rem;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  box-shadow: inset -0.1rem -0.1rem var(--mid);
+  text-align: center;
+  flex: 1 1em;
+}
+
+a.link:link {
+  color: var(--fg);
+}
+
+a.link:visited {
+  color: var(--fg);
+}
+
+a.link:hover {
+  box-shadow: inset 0.1rem 0.1rem var(--mid);
+}
+
+.bio {
+  background-color: var(--bg);
+  border: 1px solid var(--mid);
+  border-radius: 0.2rem;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: inset -0.1rem -0.1rem var(--mid);
+  text-align: center;
+  font-size: 1.1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.name {
+  background-color: var(--bg);
+  border: 1px solid var(--mid);
+  border-radius: 0.2rem;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  box-shadow: inset -0.1rem -0.1rem var(--mid);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
